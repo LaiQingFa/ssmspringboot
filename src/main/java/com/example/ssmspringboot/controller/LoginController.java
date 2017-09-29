@@ -13,7 +13,10 @@ import java.util.Map;
 
    /* idea使用git进行项目管理
     参考自http://www.cnblogs.com/java-maowei/p/5950930.html
-    2017.9.28 */
+    2017.9.28
+    IntelliJ Idea SpringBoot 数据库增删改查实例
+    http://blog.csdn.net/peng_hong_fu/article/details/53691705
+    2017.9.29*/
 
 @Controller
 public class LoginController {

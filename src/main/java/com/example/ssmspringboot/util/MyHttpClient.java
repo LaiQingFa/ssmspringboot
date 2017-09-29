@@ -14,9 +14,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 /**
- *  发送http请求并回应
- * @author 张晓光
- * 2016年8月5日
+ *  发送 post  http请求并回应
  */
 public class MyHttpClient {
    /**
