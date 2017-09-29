@@ -1,3 +1,3 @@
-*J2EE项目系列 springboot web  
-*Spring+SpringMVC+MyBatis+SpringBoot+Mysql+MAVEN）   
+## J2EE项目-- springboot web  
+### Spring+SpringMVC+MyBatis+SpringBoot+Mysql+MAVEN）   
  
