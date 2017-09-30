@@ -41,7 +41,7 @@ public class LoginController {
     @RequestMapping("index")
     public String sucessjsp(Model model){
         User u=userMapper.selectByPrimaryKey(1);
-        System.out.print(u.getUsername());
+        //System.out.print(u.getUsername());
         model.addAttribute("root",u.getUsername());
         return "/index";
     }
