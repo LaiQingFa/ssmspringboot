@@ -11,5 +11,6 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
     @Override
     public void addInterceptors(InterceptorRegistry interceptorRegistry) {
         interceptorRegistry.addInterceptor(new LogHandlerInterceptor());
+
     }
 }
