@@ -7,7 +7,7 @@ package com.example.ssmspringboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
-
+//exclude = ErrorMvcAutoConfiguration.class  去掉springboot默认的异常处理
 @SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
 public class SsmspringbootApplication {
 
