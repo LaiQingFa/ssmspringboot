@@ -22,6 +22,12 @@ import java.util.Map;
     http://blog.csdn.net/peng_hong_fu/article/details/53691705
     2017.9.29*/
 
+
+   /*java 中,方法参数为(string...names)
+           这个是参数不确定个数的定义说明，是JAVA泛型的一种体现，原理与(String[] names)基本一致
+           例如：
+           定义：public List getPerson(String ... names)(){}
+        调用：gerPerson("aaa","bbb")*/
 @Controller
 public class LoginController {
 

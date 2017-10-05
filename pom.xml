@@ -34,6 +34,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<!--scope为test意味着打包的时候不会被导入到war里面-->
 		</dependency>
 
 		<dependency>
