@@ -1,7 +1,15 @@
 package com.example.ssmspringboot;
 
 /*  springBoot+ssm+mysql
-参考文章：http://blog.csdn.net/liboyang71/article/details/73459909*/
+参考文章：http://blog.csdn.net/liboyang71/article/details/73459909
+
+javascript限制只能输入正整数：
+
+<input type="text" ID="txtNumber" Width="50px" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
+     onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}" />
+
+*/
+
 
 
 import org.springframework.boot.SpringApplication;
