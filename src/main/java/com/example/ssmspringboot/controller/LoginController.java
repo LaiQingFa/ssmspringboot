@@ -2,6 +2,7 @@ package com.example.ssmspringboot.controller;
 
 import com.example.ssmspringboot.dao.User;
 import com.example.ssmspringboot.domain.UserMapper;
+import com.example.ssmspringboot.util.ByteUtil;
 import com.example.ssmspringboot.util.MyHttpClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
