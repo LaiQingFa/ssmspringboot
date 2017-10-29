@@ -106,22 +106,23 @@
         <div class="grid_3 grid_5">
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#expeditions" id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true">FASHION</a></li>
-                    <li role="presentation" class=""><a href="#safari" role="tab" id="safari-tab" data-toggle="tab" aria-controls="safari">TRAVEL</a></li>
-                    <li role="presentation" class=""><a href="#trekking" role="tab" id="trekking-tab" data-toggle="tab" aria-controls="trekking">MUSIC</a></li>
+                    <li role="presentation" class="active"><a href="#expeditions" id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true">途中</a></li>
+                    <li role="presentation" class=""><a href="#safari" role="tab" id="safari-tab" data-toggle="tab" aria-controls="safari">旅行</a></li>
+                    <li role="presentation" class=""><a href="#trekking" role="tab" id="trekking-tab" data-toggle="tab" aria-controls="trekking">见闻</a></li>
                 </ul>
                 <div id="myTabContent" class="tab-content">
                     <div role="tabpanel" class="tab-pane fade" id="expeditions" aria-labelledby="expeditions-tab">
 
                         <div class="col-md-4 col-sm-5 tab-image">
-                            <img src="indexSource/images/f2.jpg" class="img-responsive" alt="Wanderer">
+                            <img src="indexSource/images/m2.jpg" class="img-responsive" alt="Wanderer">
                         </div>
                         <div class="col-md-4 col-sm-5 tab-image">
-                            <img src="indexSource/images/f4.jpg" class="img-responsive" alt="Wanderer">
+                            <img src="indexSource/images/m1.jpg" class="img-responsive" alt="Wanderer">
                         </div>
                         <div class="col-md-4 col-sm-5 tab-image">
-                            <img src="indexSource/images/f3.jpg" class="img-responsive" alt="Wanderer">
+                            <img src="indexSource/images/m3.jpg" class="img-responsive" alt="Wanderer">
                         </div>
+
                         <div class="clearfix"></div>
                     </div>
 
@@ -140,14 +141,15 @@
                     </div>
                     <div role="tabpanel" class="tab-pane fade active in" id="trekking" aria-labelledby="trekking-tab">
 
+
                         <div class="col-md-4 col-sm-5 tab-image">
-                            <img src="indexSource/images/m2.jpg" class="img-responsive" alt="Wanderer">
+                            <img src="indexSource/images/f2.jpg" class="img-responsive" alt="Wanderer">
                         </div>
                         <div class="col-md-4 col-sm-5 tab-image">
-                            <img src="indexSource/images/m1.jpg" class="img-responsive" alt="Wanderer">
+                            <img src="indexSource/images/f4.jpg" class="img-responsive" alt="Wanderer">
                         </div>
                         <div class="col-md-4 col-sm-5 tab-image">
-                            <img src="indexSource/images/m3.jpg" class="img-responsive" alt="Wanderer">
+                            <img src="indexSource/images/f3.jpg" class="img-responsive" alt="Wanderer">
                         </div>
                         <div class="clearfix"></div>
                     </div>

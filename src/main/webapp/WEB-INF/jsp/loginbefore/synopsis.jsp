@@ -177,120 +177,33 @@
 
                     <h4>文章列表 </h4>
                     <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/t2.jpg" class="img-responsive" alt=""></a>
+                        <div  >
+                            <h5><a href="synopsis">* springboot简介</a> </h5>
                         </div>
-                        <div class="blog-grid-right">
-
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
+                        <div class="clearfix"> </div>
+                    </div>
+                    
+                    <div class="blog-grids">
+                        <div  >
+                            <h5><a href="mavenAddJarLocal">* maven托管下引入本地的jar包</a> </h5>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/m2.jpg" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
-
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
+                        <div  >
+                            <h5><a href="springbootaop">* SpringBoot Aop 面向方法(切面)编程</a> </h5>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/f2.jpg" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
-
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
+                        <div  >
+                            <h5><a href="springMicroservices">* Microservices -- Springboot微服务</a> </h5>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
-                    <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/t3.jpg" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
 
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
 
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
 
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="blog-grids">
-                        <div class="blog-grid-left">
-                            <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
-
-                            <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div> <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div> <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div> <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div> <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div> <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="singlepage.html"><img src="indexSource/images/m3.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
 
 
 

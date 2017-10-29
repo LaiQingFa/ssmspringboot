@@ -75,8 +75,26 @@ public class LoginController {
 
         return "/loginbefore/essay/mavenAddJarLocal";
     }
+       /**
+        * SpringBoot Aop 面向方法(切面)编程
+        * @return
+        */
+       @RequestMapping("springbootaop")
+       public String springbootaop(){
 
-    /**
+           return "/loginbefore/essay/springbootAop";
+       }
+       /**
+        * Microservices -- Springboot微服务
+        * @return
+        */
+       @RequestMapping("springMicroservices")
+       public String springMicroservices(){
+
+           return "/loginbefore/essay/Microservices";
+       }
+
+       /**
      * 跳转到简介页面
      * @return
      */
