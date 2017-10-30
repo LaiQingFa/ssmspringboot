@@ -3,7 +3,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>idea中maven依赖本地非repository中的jar包</title>
+    <title>回调函数</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -80,7 +80,7 @@
     <div class="container">
         <div class="logo">
             <h1><a href="index.html">springboot笔记</a></h1>
-            <p><label class="of"></label>2017.9.27<label class="on"></label></p>
+            <p><label class="of"></label>2017.10.30<label class="on"></label></p>
         </div>
     </div>
 </div>
@@ -96,33 +96,14 @@
         <div class="col-md-9 technology-left">
             <div class="agileinfo">
 
-                <h2 class="w3">maven托管下引入本地的jar包</h2>
+                <h2 class="w3">java回调函数</h2>
                 <div class="single">
                     <div class="b-bottom">
-                         <h3>今天在用IDEA写springboot的demo的时候，碰到一个问题：
-                            项目在开发是用maven控制jar包的引入，那么如何引入本地的jar包呢，查询出一种方法是将jar放到本地的maven库中，然后引入，但是觉得麻烦，
-                            这里记录一下引入本地jar包的方法。</h3>
+                        <h3>在WINDOWS中，程序员想让系统DLL调用自己编写的一个方法，于是利用DLL当中回调函数（CALLBACK）的接口来编写程序，使它调用，这个就称为回调。在调用接口时，需要严格的按照定义的参数和方法调用，并且需要处理函数的异步，否则会导致程序的崩溃。这样的解释似乎还是比较难懂，这里举个简单的例子，程序员A写了一段程序（程序a），其中预留有回调函数接口，并封装好了该程序。程序员B要让a调用自己的程序b中的一个方法，于是，他通过a中的接口回调自己b中的方法。目的达到。在C/C++中，要用回调函数，被掉函数需要告诉调用者自己的指针地址，但在JAVA中没有指针，怎么办？我们可以通过接口（interface）来实现定义回调函数。</h3>
 
                         <p>&nbsp</p>
+                        <p>http://blog.csdn.net/sweetwxh/article/details/2067139</p>
 
-                        <p>先将jar包放到webapp/WEB-INF/lib下</p>
-
-                        <p>&nbsp</p>
-                        <p>&lt;dependency&gt; </p>
-                        <p>&lt;groupId&gt;org.apache&lt;/groupId&gt;</p>
-                        <p>&lt;artifactId&gt;test&lt;/artifactId&gt; </p>
-                        <p>&lt;version&gt;1.0&lt;/version&gt; </p>
-                        <p>&lt;scope&gt;system&lt;/scope&gt; </p>
-                        <p>&lt;systemPath&gt;${basedir}/src/main/webapp/WEB-INF/lib/httpclient-4.5.2.jar&lt;/systemPath&gt; </p>
-                        <p>&lt;/dependency&gt; </p>
-                        <p>&nbsp</p>
-
-
-
-                        <h3>参考资料</h3>
-                        <p>&nbsp </p>
-                        <a href="http://blog.csdn.net/chs_jdmdr/article/details/7467305">maven依赖本地非repository中的jar包</a>
-                        <p>&nbsp </p>
 
 
                         <p>On Sep 27 <a class="span_link" href=" "><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href=" "><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
@@ -161,7 +142,6 @@
                 <div class="tech-btm">
 
                     <h4>文章列表 </h4>
-
                     <div class="blog-grids">
                         <div  >
                             <h5><a href="synopsis">* springboot简介</a> </h5>
@@ -192,6 +172,11 @@
                         </div>
                         <div class="clearfix"> </div>
                     </div>
+
+
+
+
+
                     <p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur, at pro</p>
                 </div>
 
@@ -233,7 +218,7 @@
 <div class="copyright">
     <div class="container">
         <p>于2017.9.25开始开发</p>
-         </div>
+    </div>
 </div>
 </body>
 </html>

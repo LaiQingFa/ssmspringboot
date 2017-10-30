@@ -93,7 +93,15 @@ public class LoginController {
 
            return "/loginbefore/essay/Microservices";
        }
+       /**
+        * java回调函数
+        * @return
+        */
+       @RequestMapping("callbackFunction")
+       public String callbackFunction(){
 
+           return "/loginbefore/essay/callbackFunction";
+       }
        /**
      * 跳转到简介页面
      * @return
