@@ -103,6 +103,15 @@ public class LoginController {
            return "/loginbefore/essay/callbackFunction";
        }
        /**
+        * java回调函数
+        * @return
+        */
+       @RequestMapping("aboutjna")
+       public String aboutjna(){
+
+           return "/loginbefore/essay/jna";
+       }
+       /**
      * 跳转到简介页面
      * @return
      */
