@@ -258,7 +258,9 @@
                                 <td>&nbsp;&nbsp;  和 Pointer 相同</td>
                             </tr>
                         </table>
-                        <p>&nbsp </p>
+                        <p>&nbsp;</p>
+                        <p>JNI也有它的缺点，使用java与本地已编译的代码交互，通常会丧失平台可移植性。</p>
+                        <p>&nbsp;</p>
                         <p class="sub"> 如果有复杂的数据类型需要在 Java和原生函数中传递，那么我们就必须在 Java 中模拟 大量复杂的原生类型。这将大大增加实现的难度，甚至无法实现。 如果在 Java 和原生函数间存在大量的数据传递，那么一方面，性能会有很大的损失。 更为重要的是，Java调用原生函数时，会把数据固定在内存中，这样原生函数才可以访问这 些 Java数据。这些数据，JVM 的 GC 不能管理，会造成内存碎片。 尽量使用基本、简单的数据类型； 尽量少跨平台、跨语言传递数据</p>
                         <p>&nbsp </p>
                         <a href="https://github.com/java-native-access/jna"> jna github开源地址</a>
@@ -267,6 +269,9 @@
                         <p>&nbsp </p>
                         <a href="http://pan.baidu.com/s/1cyJeBO"> jna使用手册</a>
                         <p>&nbsp </p>
+                        <a href="http://blog.csdn.net/woniu211111/article/details/78041868"> windows和linux环境下java调用C++代码-JNI技术</a>
+                        <p>&nbsp </p>
+
 
 
                         <p>On oct 30 <a class="span_link" href=" "><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href=" "><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
