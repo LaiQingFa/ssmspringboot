@@ -67,7 +67,7 @@ public class LoginController {
     }
 
     /**
-     * 跳转到mavenAddJarLocal文章
+     * 跳转到mavenAddJarLocal文章 .
      * @return
      */
     @RequestMapping("mavenAddJarLocal")
