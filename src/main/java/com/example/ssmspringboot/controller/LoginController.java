@@ -152,6 +152,18 @@ public class LoginController {
         return "/loginafter/sucessLogin";
     }
 
+       /**
+        * 海康威视摄像头的操作页面
+        *
+        * @return
+        */
+    @RequestMapping("HaiweiKangshiVedio")
+    public String HaiweiKangshiVedio( ){
+
+
+       return "/loginbefore/essay/HaiweiKangShiVedio";
+    }
+
     @RequestMapping("socketcoe")
     public String socketcoe() throws IOException, ClassNotFoundException{
 

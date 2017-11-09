@@ -62,7 +62,7 @@
                             <li><a href="travel.html">Travel</a></li>
                             <li><a href="fashion.html">Fashion</a></li>
                             <li><a href="music.html">Music</a></li>
-                            <li><a href="codes.html">Codes</a></li>
+                            <li><a href="HaiweiKangshiVedio">海康威视摄像头的操作页面</a></li>
                             <li><a href="signin">上帝之门</a></li>
                         </ul>
                     </nav>
