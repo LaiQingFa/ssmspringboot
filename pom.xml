@@ -73,6 +73,12 @@
 		</dependency>
 		<!--参考链接 http://blog.csdn.net/chs_jdmdr/article/details/7467305-->
 
+		<!-- 热部署模块 修改html页面 后再刷新页面，会发现显示结果跟着变化-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
+		</dependency>
 
 	</dependencies>
 
