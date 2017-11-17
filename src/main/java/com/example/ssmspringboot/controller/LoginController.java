@@ -111,6 +111,11 @@ public class LoginController {
 
            return "/loginbefore/essay/jna";
        }
+       @RequestMapping("upAndDownLoad")
+       public String upAndDownLoad(){
+
+           return "/loginbefore/essay/upAndDownLoad";
+       }
        /**
      * 跳转到简介页面
      * @return

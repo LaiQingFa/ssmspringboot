@@ -1,9 +1,16 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2017/11/15
+  Time: 15:36   upload  download
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>文章首页</title>
+    <title>文件上传和下载</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -75,16 +82,7 @@
         <div class="clearfix"> </div>
     </div>
 </div>
-<!--start-main-->
-<div class="header-bottom">
-    <div class="container">
-        <div class="logo">
-            <h1><a href="index.html">springboot笔记</a></h1>
-            <p><label class="of"></label>2017.9.26<label class="on"></label></p>
-        </div>
-    </div>
-</div>
-<!-- banner -->
+
 
 <div class="banner-1">
 
@@ -96,18 +94,14 @@
         <div class="col-md-9 technology-left">
             <div class="agileinfo">
 
-                <h2 class="w3">springboot简介</h2>
+                <h2 class="w3">文件上传和下载</h2>
                 <div class="single">
-                    <img src="indexSource/images/sing-1.jpg" class="img-responsive" alt="">
+
                     <div class="b-bottom">
-                        <h5 class="top">SpringBoot 是 SpringMVC 的升级版，相对于编码、配置、部署和监控方面，会更加简单</h5>
-                        <h3>微服务</h3>
-                        <p class="sub">微服务是一个新兴的软件架构，就是把一个大型的单个应用程序和服务拆分为数十个的支持微服务。一个微服务的策略可以让工作变得更为简便，它可扩展单个组件而不是整个的应用程序堆栈，从而满足服务等级协议。</p>
-                        <p class="sub">Spring 为 微服务提供了一整套的组件-SpringClound , SpirngBoot 就是该基础。</p>
+
 
                         <p>&nbsp</p>
-                        <h3>Spring boot的特点</h3>
-                        <p>&nbsp</p>
+
                         <p>1. 创建独立的Spring应用程序</p>
                         <p>2. 嵌入的Tomcat，无需部署WAR文件</p>
                         <p>3. 简化Maven配置</p>
@@ -117,30 +111,13 @@
                         <p>7. 使用约定大于配置的规则</p>
                         <p>&nbsp </p>
 
-                        <h3>*注意事项：</h3>
-                        <p>&nbsp</p>
-                        <p>1.开发第一个springboot程序最好使用maven来搭建，文档全程也是maven构建。</p>
-                        <p>2.springboot因为是一个最新开发的框架，所以只支持java6以上，java7最好，官方推荐java8。</p>
-                        <p>3.需要maven3.2以上版本支持。</p>
-                        <p>4.建议使用idea专业版开发，各项支持都比较全</p>
-                        <p>&nbsp</p>
 
-                        <h3>Spring Boot的基础结构：</h3>
-                        <p>&nbsp</p>
-                        <p> .src/main/java  程序开发以及主程序入口</p>
-                        <p> .src/main/resources 配置文件</p>
-                        <p> .src/test/java  测试程序</p>
-                        <p>&nbsp </p>
 
                         <h3>参考资料</h3>
-                        <p>&nbsp </p>
-                        <a href="http://blog.csdn.net/peng_hong_fu/article/details/53691705">IntelliJ Idea SpringBoot 数据库增删改查实例</a>
                         <p>&nbsp </p>
                         <a href="http://blog.csdn.net/king866/article/details/53996632"> spring boot介绍及使用详解</a>
                         <p>&nbsp </p>
 
-                        <p class="sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since,Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's standard dummy text ever since Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <p>On Aug 01 <a class="span_link" href=" "><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href=" "><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
 
                     </div>
                 </div>
@@ -226,7 +203,7 @@
 
 
 
-                    <p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur, at pro</p>
+                    <p>不定时新增文章</p>
                 </div>
 
 
@@ -239,34 +216,10 @@
         <!-- technology-right -->
     </div>
 </div>
-<div class="footer">
-    <div class="container">
-        <div class="col-md-4 footer-left">
-            <h4>About Me</h4>
-            <p>Consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod .</p>
 
-        </div>
-        <div class="col-md-4 footer-middle">
-            <h4>Latest Tweet</h4>
-            <div class="mid-btm">
-                <p>Sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod .</p>
-                <a href="http://sc.chinaz.com/">http://sc.chinaz.com/</a>
-            </div>
-        </div>
-        <div class="col-md-4 footer-right">
-            <h4>Newsletter</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-
-
-            <div class="clearfix"> </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
 <div class="copyright">
     <div class="container">
-        <p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        <p>2017.11.15</p>
     </div>
 </div>
 </body>
