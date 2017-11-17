@@ -10,6 +10,12 @@ import org.springframework.stereotype.Component;
  *
  *@这里value值越小，启动的优先级越高，可以写多个类实现CommandLineRunner接口，优先级按照value值划分
  * @blog  http://blog.csdn.net/catoop/
+
+ *
+ *
+ *
+ * JDK5新特性之一
+    String... excludeProperty表示不定参数，也就是调用这个方法的时候这里可以传入多个String对象
  */
 @Component
 @Order(value=1)
