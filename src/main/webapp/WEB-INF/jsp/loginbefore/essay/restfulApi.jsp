@@ -3,7 +3,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>回调函数</title>
+    <title>RESTful API的理解</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -62,33 +62,11 @@
                 <!-- /.navbar-collapse -->
             </nav>
         </div>
-        <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
-            <ul>
-                <li><a href="#"> </a></li>
-                <li><a href="#" class="pin"> </a></li>
-                <li><a href="#" class="in"> </a></li>
-                <li><a href="#" class="be"> </a></li>
 
-                <li><a href="#" class="vimeo"> </a></li>
-            </ul>
-        </div>
         <div class="clearfix"> </div>
     </div>
 </div>
-<!--start-main-->
-<div class="header-bottom">
-    <div class="container">
-        <div class="logo">
-            <h1><a href="index.html">springboot笔记</a></h1>
-            <p><label class="of"></label>2017.10.30<label class="on"></label></p>
-        </div>
-    </div>
-</div>
-<!-- banner -->
 
-<div class="banner-1">
-
-</div>
 
 <!-- technology-left -->
 <div class="technology">
@@ -96,18 +74,26 @@
         <div class="col-md-9 technology-left">
             <div class="agileinfo">
 
-                <h2 class="w3">java回调函数</h2>
+                <h2 class="w3">RESTful API的理解</h2>
                 <div class="single">
                     <div class="b-bottom">
-                        <h3>在WINDOWS中，程序员想让系统DLL调用自己编写的一个方法，于是利用DLL当中回调函数（CALLBACK）的接口来编写程序，使它调用，这个就称为回调。在调用接口时，需要严格的按照定义的参数和方法调用，并且需要处理函数的异步，否则会导致程序的崩溃。这样的解释似乎还是比较难懂，这里举个简单的例子，程序员A写了一段程序（程序a），其中预留有回调函数接口，并封装好了该程序。程序员B要让a调用自己的程序b中的一个方法，于是，他通过a中的接口回调自己b中的方法。目的达到。在C/C++中，要用回调函数，被掉函数需要告诉调用者自己的指针地址，但在JAVA中没有指针，怎么办？我们可以通过接口（interface）来实现定义回调函数。</h3>
+                        <h3>什么是REST？</h3>
+                        <p>&nbsp</p>
+                        <p>可以总结为一句话：REST是所有Web应用都应该遵守的架构设计指导原则。</p>
+                        <p>&nbsp</p>
+                        <p>Representational State Transfer，翻译是”表现层状态转化”。
+                            面向资源是REST最明显的特征，对于同一个资源的一组不同的操作。资源是服务器上一个可命名的抽象概念，资源是以名词为核心来组织的，首先关注的是名词。REST要求，必须通过统一的接口来对资源执行各种操作。对于每个资源只能执行一组有限的操作。（7个HTTP方法：GET/POST/PUT/DELETE/PATCH/HEAD/OPTIONS）</p>
+                        <p>&nbsp</p>
+
+                        <h3>什么是RESTful API？</h3>
 
                         <p>&nbsp</p>
-                        <p>http://blog.csdn.net/sweetwxh/article/details/2067139</p>
+                        <p>符合REST架构设计的API。</p>
+                        <p>&nbsp</p>
+                        <p>符合REST设计标准的API，即RESTful API。REST架构设计，遵循的各项标准和准则，就是HTTP协议的表现，换句话说，HTTP协议就是属于REST架构的设计模式。比如，无状态，请求-响应。。</p>
+                        <p>&nbsp</p>
 
-
-
-                        <p>On Sep 27 <a class="span_link" href=" "><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href=" "><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
-
+                        <p>参考---- <a class="span_link" href="http://blog.csdn.net/wangyanchao000/article/details/55047806"><span >RESTful API的理解--CSDN</span></a></p>
                     </div>
                 </div>
 
@@ -172,12 +158,7 @@
                         </div>
                         <div class="clearfix"> </div>
                     </div>
-                    <div class="blog-grids">
-                        <div  >
-                            <h5><a href="restfulApi">* RESTful API的理解</a> </h5>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
+
 
 
 

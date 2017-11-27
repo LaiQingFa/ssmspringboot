@@ -75,6 +75,17 @@ public class LoginController {
 
         return "/loginbefore/essay/mavenAddJarLocal";
     }
+
+       /**
+        * 跳转到RESTful API的理解  __文章 .
+        * @return
+        */
+       @RequestMapping("restfulApi")
+       public String restfulApi(){
+
+           return "/loginbefore/essay/restfulApi";
+       }
+
        /**
         * SpringBoot Aop 面向方法(切面)编程
         * @return
