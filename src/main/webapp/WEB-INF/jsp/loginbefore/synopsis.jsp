@@ -225,7 +225,12 @@
                         </div>
                         <div class="clearfix"> </div>
                     </div>
-
+                    <div class="blog-grids">
+                        <div  >
+                            <h5><a href="restfulApi">* 在java中使用python脚本</a> </h5>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
 
 
 

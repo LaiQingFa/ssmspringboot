@@ -2,6 +2,10 @@ package com.example.ssmspringboot.controller;
 
 import com.example.ssmspringboot.dao.User;
 import com.example.ssmspringboot.domain.UserMapper;
+import org.python.core.PyFunction;
+import org.python.core.PyInteger;
+import org.python.core.PyObject;
+import org.python.util.PythonInterpreter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -23,5 +27,20 @@ public class UserController {
         return "index";
     }
 
+    /**
+     * 在java中使用python脚本
+     * @param map
+     */
+    @RequestMapping("/pythonJavaCon")
+    public void pythonJavaCon(ModelMap map) {
+
+        PythonInterpreter interpreter = new PythonInterpreter();
+        interpreter.execfile("G:/my_utils.py");
+        PyFunction func = (PyFunction) interpreter.get("adder", PyFunction.class);
+
+        int a = 2010, b = 6;
+        PyObject pyobj = func.__call__(new PyInteger(a), new PyInteger(b));
+        System.out.println("在java中使用python脚本_____anwser = " + pyobj.toString());
+    }
 
 }

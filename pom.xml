@@ -80,6 +80,14 @@
 			<optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
 		</dependency>
 
+		<dependency>
+			<groupId>org.python</groupId>
+			<artifactId>jython1</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/jython-standalone-2.7.0.jar</systemPath>
+		</dependency>
+
 	</dependencies>
 
 	<build>
