@@ -100,17 +100,24 @@
                         <p>3、使用</p>
                         <p><a href="http://blog.csdn.net/qincidong/article/details/76687164">参照链接使用</a></p>
 
+
                         <p>&nbsp </p>
 
+                        <h3>*win10 下安装redis：</h3>
+                        <p>&nbsp</p>
+                        <p>参考链接： </p>
+                        <p>http://blog.csdn.net/renfufei/article/details/38474435</p>
+
+                        <p>&nbsp </p>
+
+
+                        <p>&nbsp </p>
                         <h3>*注意事项：</h3>
                         <p>&nbsp</p>
                         <p>Redis对于Linux是官方支持的,安装和使用没有什么好说的,普通使用按照官方指导，5分钟以内就能搞定</p>
-
                         <p>&nbsp</p>
-
                         <p> Redis官方是不支持windows的，只是 Microsoft Open Tech group 在 GitHub上开发了一个Win64的版本,项目地址是：</p>
                         <p> https://github.com/MSOpenTech/redis</p>
-
                         <p>&nbsp </p>
 
                         <h3>参考资料</h3>
