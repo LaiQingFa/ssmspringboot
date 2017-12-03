@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -23,21 +24,37 @@ public class RedisAutoTest {
     private RedisTemplate<String,UserInfo> Template;
 
 
-    @Test
+/*    @Test
     public void save(){
 
         stringRedisTemplate.opsForValue().set("key1","key1测试value");
         System.out.println("key1的value="+stringRedisTemplate.opsForValue().get("key1")+"_____~~~~~~~~~~");
-    }
+    }*/
 
 
-    @Test
+ /*   @Test
     public void testobjSerializer() throws InterruptedException {
         UserInfo user = new UserInfo("111111","snow","112358");
         Template.opsForValue().set("User:snow",user);
 
         System.out.println( Template.hasKey("User:snow")+"   ————————————————————————————");
         System.out.println( Template.opsForValue().get("User:snow")+"   ————————————————————————————");
+
+    }*/
+
+
+
+    @Test
+    public void testobj() throws InterruptedException {
+        UserInfo user = new UserInfo("15201803745","snow","112358");
+        ValueOperations<String,UserInfo> operations = Template.opsForValue();
+        operations.set("User:zzp",user);
+        Thread.sleep(1000);
+        operations.set("User:zzq",user);
+        Thread.sleep(1000);
+
+        System.out.println( Template.hasKey("User:zzp") );
+        System.out.println( Template.opsForValue().get("User:zzq") );
 
     }
 }
