@@ -4,6 +4,7 @@ import com.example.ssmspringboot.dao.User;
 import com.example.ssmspringboot.domain.UserMapper;
 import com.example.ssmspringboot.util.ByteUtil;
 import com.example.ssmspringboot.util.MyHttpClient;
+import com.example.ssmspringboot.util.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -147,7 +149,33 @@ public class LoginController {
         return "/loginafter/signin";
     }
 
+    /**
+     * 成功登录
+     * @return
+     */
+    @RequestMapping("sucessLogin")
+    public String sucessLogin(Model model,Page page){
+        User u=userMapper.selectByPrimaryKey(1);
 
+        List<User> userlists=userMapper.list(page);
+        int total = userMapper.total();
+        page.caculateLast(total);
+
+        model.addAttribute("username",u.getUsername());
+        return "/loginafter/sucessLogin";
+    }
+
+       @RequestMapping("getUsersPage")
+       public String getUsersPage(Model model,Page page){
+
+           List<User> userlists=userMapper.list(page);
+           int total = userMapper.total();
+           page.caculateLast(total);
+
+           model.addAttribute("userlists",userlists);
+           model.addAttribute("total",total);
+           return "/loginafter/userList";
+       }
 
     @RequestMapping("test")
     public String test(Model model){

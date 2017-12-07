@@ -29,29 +29,6 @@ public class UserController {
         return "index";
     }
 
-
-    /**
-     * 获取所有用户列表 并分页
-     * @param map
-     * @param page
-     * @return
-     */
-    @RequestMapping("getUsersPage")
-    public String getUsersPage(Model map, Page page) {
-
-
-        List<User> userlists=userMapper.list(page);
-        int total = userMapper.total();
-        page.caculateLast(total);
-
-
-        map.addAttribute("total", total);
-        map.addAttribute("userlists", userlists);
-        return "/loginafter/userList";
-    }
-
-
-
     /**
      * 在java中使用python脚本
      * @param map
