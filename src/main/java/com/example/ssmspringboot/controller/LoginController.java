@@ -147,16 +147,7 @@ public class LoginController {
         return "/loginafter/signin";
     }
 
-    /**
-     * 成功登录
-     * @return
-     */
-    @RequestMapping("sucessLogin")
-    public String sucessLogin(Model model){
-        User u=userMapper.selectByPrimaryKey(1);
-        model.addAttribute("username",u.getUsername());
-        return "/loginafter/sucessLogin";
-    }
+
 
     @RequestMapping("test")
     public String test(Model model){

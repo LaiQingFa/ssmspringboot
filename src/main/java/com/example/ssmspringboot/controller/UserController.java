@@ -2,6 +2,7 @@ package com.example.ssmspringboot.controller;
 
 import com.example.ssmspringboot.dao.User;
 import com.example.ssmspringboot.domain.UserMapper;
+import com.example.ssmspringboot.util.Page;
 import org.python.core.PyFunction;
 import org.python.core.PyInteger;
 import org.python.core.PyObject;
@@ -11,7 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -26,6 +28,29 @@ public class UserController {
         // return模板文件的名称，对应src/main/resources/templates/index.html
         return "index";
     }
+
+
+    /**
+     * 获取所有用户列表 并分页
+     * @param map
+     * @param page
+     * @return
+     */
+    @RequestMapping("getUsersPage")
+    public String getUsersPage(Model map, Page page) {
+
+
+        List<User> userlists=userMapper.list(page);
+        int total = userMapper.total();
+        page.caculateLast(total);
+
+
+        map.addAttribute("total", total);
+        map.addAttribute("userlists", userlists);
+        return "/loginafter/userList";
+    }
+
+
 
     /**
      * 在java中使用python脚本

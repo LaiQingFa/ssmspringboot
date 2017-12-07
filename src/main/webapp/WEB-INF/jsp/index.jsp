@@ -58,7 +58,7 @@
                         <ul class="nav navbar-nav">
                             <li class="active act"><a href="index ">Main</a></li>
                             <li><a href="synopsis">文章</a></li>
-                            <li><a href="features.html">Features</a></li>
+                            <li><a href="getUsersPage">分页</a></li>
                             <li><a href="travel.html">Travel</a></li>
                             <li><a href="fashion.html">Fashion</a></li>
                             <li><a href="music.html">Music</a></li>
