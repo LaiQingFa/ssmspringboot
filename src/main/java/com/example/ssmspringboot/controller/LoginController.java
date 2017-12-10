@@ -35,6 +35,15 @@ import java.util.Map;
            例如：
            定义：public List getPerson(String ... names)(){}
         调用：gerPerson("aaa","bbb")*/
+/*
+    多数据源
+    通常一个系统只需要连接一个数据库就可以了，Jeecg数据源是配置在spring-mvc-hibernate.xml文件中，
+    这种数据源我们叫做主数据源。但是在企业应用的开发中往往会和其他子系统交互，特别是对于一些数据实时性要求比较高的数据，
+    我们就需要做实时连接查询，而不是做同步。这个时候就需要用到多数据源
+
+    实例：Spring Boot +Mybatis+druid动态多数据源自由切换
+    http://blog.csdn.net/zgliang88/article/details/78003538?locationNum=8&fps=1
+   */
 @Controller
 public class LoginController {
 
