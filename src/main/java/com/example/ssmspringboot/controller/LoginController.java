@@ -97,6 +97,16 @@ public class LoginController {
            return "/loginbefore/essay/restfulApi";
        }
 
+
+       /**
+        * 跳转到数据库操作的优化  __文章 .
+        * @return
+        */
+       @RequestMapping("databaseOptimization")
+       public String databaseOptimization(){
+
+           return "/loginbefore/essay/databaseOptimization";
+       }
        /**
         * SpringBoot Aop 面向方法(切面)编程
         * @return

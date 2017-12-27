@@ -1,9 +1,16 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2017/12/27
+  Time: 16:47
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>文章首页</title>
+    <title>数据库操作优化</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -79,15 +86,10 @@
 <div class="header-bottom">
     <div class="container">
         <div class="logo">
-            <h1><a href="index.html">springboot笔记</a></h1>
-            <p><label class="of"></label>2017.9.26<label class="on"></label></p>
+            <h1><a href="index.html">数据库操作优化</a></h1>
+            <p><label class="of"></label>2017.12.27<label class="on"></label></p>
         </div>
     </div>
-</div>
-<!-- banner -->
-
-<div class="banner-1">
-
 </div>
 
 <!-- technology-left -->
@@ -96,51 +98,58 @@
         <div class="col-md-9 technology-left">
             <div class="agileinfo">
 
-                <h2 class="w3">springboot简介</h2>
+                <h2 class="w3">mysql 批量更新</h2>
                 <div class="single">
-                    <img src="indexSource/images/sing-1.jpg" class="img-responsive" alt="">
+
                     <div class="b-bottom">
-                        <h5 class="top">SpringBoot 是 SpringMVC 的升级版，相对于编码、配置、部署和监控方面，会更加简单</h5>
-                        <h3>微服务</h3>
-                        <p class="sub">微服务是一个新兴的软件架构，就是把一个大型的单个应用程序和服务拆分为数十个的支持微服务。一个微服务的策略可以让工作变得更为简便，它可扩展单个组件而不是整个的应用程序堆栈，从而满足服务等级协议。</p>
-                        <p class="sub">Spring 为 微服务提供了一整套的组件-SpringClound , SpirngBoot 就是该基础。</p>
-
                         <p>&nbsp</p>
-                        <h3>Spring boot的特点</h3>
-                        <p>&nbsp</p>
-                        <p>1. 创建独立的Spring应用程序</p>
-                        <p>2. 嵌入的Tomcat，无需部署WAR文件</p>
-                        <p>3. 简化Maven配置</p>
-                        <p>4. 自动配置Spring</p>
-                        <p>5. 提供生产就绪型功能，如指标，健康检查和外部配置</p>
-                        <p>6. 绝对没有代码生成和对XML没有要求配置</p>
-                        <p>7. 使用约定大于配置的规则</p>
+                        <h3>* </h3>
+                        <p>UPDATE mytable
+                            SET myfield = CASE id
+                            WHEN 1 THEN 'value'
+                            WHEN 2 THEN 'value'
+                            WHEN 3 THEN 'value'
+                            END
+                            WHERE id IN (1,2,3)</p>
                         <p>&nbsp </p>
 
-                        <h3>*注意事项：</h3>
-                        <p>&nbsp</p>
-                        <p>1.开发第一个springboot程序最好使用maven来搭建，文档全程也是maven构建。</p>
-                        <p>2.springboot因为是一个最新开发的框架，所以只支持java6以上，java7最好，官方推荐java8。</p>
-                        <p>3.需要maven3.2以上版本支持。</p>
-                        <p>4.建议使用idea专业版开发，各项支持都比较全</p>
-                        <p>&nbsp</p>
-
-                        <h3>Spring Boot的基础结构：</h3>
-                        <p>&nbsp</p>
-                        <p> .src/main/java  程序开发以及主程序入口</p>
-                        <p> .src/main/resources 配置文件</p>
-                        <p> .src/test/java  测试程序</p>
+                        <p>这里使用 case when，这句sql的意思是，更新display_order 字段，如果id=1 则display_order 的值为3，如果id=2 则 display_order 的值为4，如果id=3 则 display_order 的值为5 </p>
                         <p>&nbsp </p>
 
-                        <h3>参考资料</h3>
-                        <p>&nbsp </p>
-                        <a href="http://blog.csdn.net/peng_hong_fu/article/details/53691705">IntelliJ Idea SpringBoot 数据库增删改查实例</a>
-                        <p>&nbsp </p>
-                        <a href="http://blog.csdn.net/king866/article/details/53996632"> spring boot介绍及使用详解</a>
+                        <h3>* </h3>
+                        <p>replace into 批量更新</p>
                         <p>&nbsp </p>
 
-                        <p class="sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since,Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's standard dummy text ever since Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <p>On Aug 01 <a class="span_link" href=" "><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href=" "><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
+                        <p>replace into test_tbl (id,dr) values (1,'2'),(2,'3'),...(x,'y');</p>
+                        <p>&nbsp;</p>
+
+                        <p>&nbsp </p>
+
+                        <h3>* </h3>
+                        <p>insert into ...on duplicate key update批量更新</p>
+                        <p>&nbsp </p>
+
+                        <p>insert into test_tbl (id,dr) values (1,'2'),(2,'3'),...(x,'y') on duplicate key update dr=values(dr);</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp </p>
+
+                        <h3>* </h3>
+                        <p>创建临时表，先更新临时表，然后从临时表中update</p>
+                        <p>&nbsp </p>
+
+                        <p>create temporary table tmp(id int(4) primary key,dr varchar(50));</p>
+                        <p>insert into tmp values  (0,'gone'), (1,'xx'),...(m,'yy');</p>
+                        <p>update test_tbl, tmp set test_tbl.dr=tmp.dr where test_tbl.id=tmp.id;</p>
+                        <p>&nbsp;</p>
+                        <p>注意：这种方法需要用户有temporary 表的create 权限。</p>
+                        <p>&nbsp;</p>
+
+                        <a href="http://blog.csdn.net/u014520745/article/details/52416002"> 大批量更新数据mysql批量更新的四种方法</a>
+                         <p>&nbsp </p>
+
+
+
+                        <p>On oct 30 <a class="span_link" href=" "><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href=" "><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
 
                     </div>
                 </div>
@@ -237,6 +246,7 @@
                         </div>
                         <div class="clearfix"> </div>
                     </div>
+
 
 
 
